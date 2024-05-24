@@ -1,0 +1,53 @@
+{
+  "folders": [
+    {
+      "path": "..",
+    },
+    {
+      "path": "../web/app",
+    },
+    {
+      "path": "../web/lib",
+    },
+    {
+      "path": "../web/page",
+    },
+    {
+      "path": "../web/widgets",
+    },
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+    },
+    "editor.indentSize": 2,
+    "explorer.fileNesting.patterns": {
+      "*.vue": "${capture}.story.vue, ${capture}.test.ts, ${capture}.spec.ts",
+      "tsconfig.json": "tsconfig.*.json",
+      "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+      "props": "*.props.ts",
+    },
+
+    "tailwindCSS.lint.cssConflict": "ignore",
+    "tailwindCSS.experimental.classRegex": [
+      ["Class \\=([^;]*)", "'([^']*)'"],
+      ["Class \\=([^;]*)", "\"([^\"]*)\""],
+      ["Class \\=([^;]*)", "\\`([^\\`]*)\\`"],
+
+      ["Classname \\=([^;]*)", "'([^']*)'"],
+      ["Classname \\=([^;]*)", "\"([^\"]*)\""],
+      ["Classname \\=([^;]*)", "\\`([^\\`]*)\\`"],
+
+      ["Styles \\=([^;]*)", "'([^']*)'"],
+      ["Styles \\=([^;]*)", "\"([^\"]*)\""],
+      ["Styles \\=([^;]*)", "\\`([^\\`]*)\\`"],
+
+      ["classname \\=([^;]*)", "'([^']*)'"],
+      ["classname \\=([^;]*)", "\"([^\"]*)\""],
+      ["classname \\=([^;]*)", "\\`([^\\`]*)\\`"],
+
+      ["tw`([^;]*)`"],
+    ],
+  },
+}
+

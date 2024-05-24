@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "atk",
+  "version": "0.0.0",
+  "devDependencies": {
+    "config-prettier": "workspace:*",
+    "eslint-formatter-pretty": "^6.0.1",
+    "plop": "^4.0.1",
+    "typescript": "^5.4.5"
+  },
+  "prettier": "config-prettier"
+}
+

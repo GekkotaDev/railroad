@@ -1,0 +1,17 @@
+# Vitest
+*.spec.*
+*.test.*
+
+# Histoire
+*.story.*
+
+# Routes
+routes/**/.lib/*.vue
+routes/**/+error.vue
+routes/**/+loading.vue
+routes/**/+view.vue
+routes/**/*.ts
+routes/**/_*.vue
+
+# Shadcn
+components/ui/**/index.*

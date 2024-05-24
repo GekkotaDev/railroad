@@ -1,0 +1,10 @@
+{
+  "name": "config-prettier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prettier.json",
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.14"
+  }
+}
+

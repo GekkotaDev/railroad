@@ -1,0 +1,44 @@
+{
+  "Ref": {
+    "prefix": "$ref",
+    "body": [
+      "let ${1:$TM_SELECTED_TEXT} = \\$ref($0);"
+    ],
+    "scope": "typescript"
+  },
+
+  "Computed": {
+    "prefix": "$computed",
+    "body": [
+      "const ${1:$TM_SELECTED_TEXT} = \\$computed(() => $0)"
+    ]
+  },
+
+  "Props": {
+    "prefix": "$props",
+    "body": [
+      "type Props = {",
+      "\t$0",
+      "};",
+      "",
+      "const props = \\$defineProps<Props>()",
+    ],
+    "scope": "typescript",
+  },
+
+  "Reactive Destructure": {
+    "prefix": "$",
+    "body": [
+      "$($TM_SELECTED_TEXT$0);"
+    ],
+    "scope": "typescript"
+  },
+
+  "Reactivity Transform Escape": {
+    "prefix": "$$",
+    "body": [
+      "$$($TM_SELECTED_TEXT$0);"
+    ],
+    "scope": "typescript"
+  }
+}

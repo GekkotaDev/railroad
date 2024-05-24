@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt generate",
+    "build:nuxt": "nuxt generate",
+    "build:stories": "histoire build",
+    "cleanup": "nuxt cleanup",
+    "dev": "nuxt dev",
+    "dev:nuxt": "nuxt dev",
+    "dev:stories": "histoire dev",
+    "generate": "nuxt generate",
+    "generate:nuxt": "nuxt generate",
+    "generate:code": "plop",
+    "info": "nuxt info",
+    "preview": "nuxt preview",
+    "preview:nuxt": "nuxt preview",
+    "preview:stories": "histoire preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "nuxt cleanup && nuxt prepare",
+    "test": "nuxt test",
+    "typecheck": "nuxt typecheck",
+    "upgrade": "nuxt upgrade",
+    "n": "nuxt",
+    "g": "plop"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.12.1",
+    "nuxt": "^3.11.2"
+  }
+}
+

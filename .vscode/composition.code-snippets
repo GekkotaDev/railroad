@@ -1,0 +1,54 @@
+{
+  "Ref": {
+    "prefix": "ref",
+    "body": [
+      "const ${1:$TM_SELECTED_TEXT} = ref($0);"
+    ],
+    "scope": "typescript"
+  },
+
+  "Computed": {
+    "prefix": "computed",
+    "body": [
+      "const ${1:$TM_SELECTED_TEXT} = computed(() => $0);"
+    ],
+    "scope": "typescript",
+  },
+
+  "Readonly": {
+    "prefix": "readonly",
+    "body": [
+      "readonly($TM_SELECTED_TEXT$0);"
+    ],
+    "scope": "typescript",
+  },
+
+  "Props": {
+    "prefix": "props",
+    "body": [
+      "type Props = {",
+      "\t$0",
+      "};",
+      "",
+      "const props = defineProps<Props>()",
+    ],
+    "scope": "typescript",
+  },
+
+  "With Defaults": {
+    "prefix": "withDefaults",
+    "body": [
+      "withDefaults($TM_SELECTED_TEXT, {)",
+      "\t$0",
+      "})",
+    ],
+    "scope": "typescript",
+  },
+
+  "To Refs": {
+    "prefix": "toRefs",
+    "body": [
+      "toRefs($TM_SELECTED_TEXT);"
+    ]
+  }
+}

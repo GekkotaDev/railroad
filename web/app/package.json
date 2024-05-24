@@ -1,0 +1,44 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt generate",
+    "build:nuxt": "nuxt generate",
+    "build:stories": "histoire build",
+    "cleanup": "nuxt cleanup",
+    "dev": "nuxt dev",
+    "dev:nuxt": "nuxt dev",
+    "dev:stories": "histoire dev",
+    "generate": "nuxt generate",
+    "generate:nuxt": "nuxt generate",
+    "generate:code": "plop",
+    "info": "nuxt info",
+    "preview": "nuxt preview",
+    "preview:nuxt": "nuxt preview",
+    "preview:stories": "histoire preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "nuxt cleanup && nuxt prepare",
+    "test": "nuxt test",
+    "typecheck": "nuxt typecheck",
+    "upgrade": "nuxt upgrade",
+    "n": "nuxt",
+    "g": "plop"
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "^5.32.0",
+    "@tanstack/vue-query-devtools": "^5.32.0",
+    "nuxt": "^3.11.2",
+    "workerpool": "^9.1.1"
+  },
+  "devDependencies": {
+    "@histoire/plugin-nuxt": "^0.17.17",
+    "@histoire/plugin-vue": "^0.17.17",
+    "@tauri-apps/cli": "2.0.0-beta.13",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/node": "^20.11.30",
+    "@vue/test-utils": "^2.4.5",
+    "msw": "^2.2.14"
+  }
+}
+

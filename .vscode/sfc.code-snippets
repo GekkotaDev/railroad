@@ -1,0 +1,11 @@
+{
+  "Setup Script": {
+    "prefix": "setup",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$0",
+      "</script>",
+    ],
+    "scope": "vue"
+  },
+}

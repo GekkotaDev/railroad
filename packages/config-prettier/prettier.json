@@ -1,0 +1,13 @@
+{
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "endOfLine": "crlf",
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+  "semi": false,
+  "vueIndentScriptAndStyle": false,
+
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
