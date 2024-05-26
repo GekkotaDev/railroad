@@ -20,7 +20,7 @@ const { labelBehavior = (_meta) => "show" } = $defineProps<Props>()
 </script>
 
 <template>
-  <Card class="flex justify-evenly rounded-none">
+  <UiCard class="flex justify-evenly rounded-none">
     <NavigationDestination
       v-for="(destination, currentIndex) in destinations"
       :key="destination.key"
@@ -36,5 +36,5 @@ const { labelBehavior = (_meta) => "show" } = $defineProps<Props>()
       grow
       @click="() => onSelect({ index: currentIndex, key: destination.key })"
     />
-  </Card>
+  </UiCard>
 </template>

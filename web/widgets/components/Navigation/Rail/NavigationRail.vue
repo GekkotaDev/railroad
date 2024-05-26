@@ -21,7 +21,7 @@ const { labelBehavior = (_meta) => "show" } = $defineProps<Props>()
 </script>
 
 <template>
-  <Card class="flex h-screen w-min flex-col rounded-none">
+  <UiCard class="flex h-screen w-min flex-col rounded-none">
     <NavigationDestination
       v-for="(destination, currentIndex) in destinations"
       :key="destination.key"
@@ -37,5 +37,5 @@ const { labelBehavior = (_meta) => "show" } = $defineProps<Props>()
       :icon-size
       @click="() => onSelect({ index: currentIndex, key: destination.key })"
     />
-  </Card>
+  </UiCard>
 </template>
