@@ -4,10 +4,9 @@ import Macros from "unplugin-macros/vite"
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ["../base"],
-  modules: ["v-wave/nuxt", "shadcn-nuxt"],
+  modules: ["v-wave/nuxt"],
 
   vite: {
     plugins: [Macros()],
   },
 })
-
