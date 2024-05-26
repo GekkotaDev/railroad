@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ["composables", "providers/context", "services", "utils"],
+    dirs: ["composables", "providers/context", "services", "stores", "utils"],
     presets: [
       {
         from: "@tanstack/vue-query",

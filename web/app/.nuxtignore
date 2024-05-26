@@ -12,3 +12,6 @@ routes/**/+loading.vue
 routes/**/+view.vue
 routes/**/*.ts
 routes/**/_*.vue
+
+# Shadcn
+components/ui/**/index.*
