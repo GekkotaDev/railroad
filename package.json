@@ -2,12 +2,19 @@
   "private": true,
   "name": "atk",
   "version": "0.0.0",
+  "scripts": {
+    "changelog": "changelogen",
+    "prepare": "husky"
+  },
   "devDependencies": {
+    "automd": "^0.3.7",
+    "changelogen": "^0.5.5",
+    "commitizen": "^4.3.0",
     "config-prettier": "workspace:*",
     "eslint-formatter-pretty": "^6.0.1",
     "plop": "^4.0.1",
+    "taze": "^0.13.8",
     "typescript": "^5.4.5"
   },
   "prettier": "config-prettier"
 }
-
