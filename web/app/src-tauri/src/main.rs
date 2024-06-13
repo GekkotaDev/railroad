@@ -4,6 +4,6 @@
 // use window_vibrancy::{apply_blur, apply_vibrancy, NSVisualEffectMaterial};
 
 #[tokio::main]
-fn main() {
+async fn main() {
   app_lib::run();
 }
