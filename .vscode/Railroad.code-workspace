@@ -22,7 +22,7 @@
     },
     "editor.indentSize": 2,
     "explorer.fileNesting.patterns": {
-      "*.vue": "${capture}.story.vue, ${capture}.test.ts, ${capture}.spec.ts",
+      "*.vue": "${capture}.story.vue, ${capture}.story.md, ${capture}.test.ts, ${capture}.spec.ts",
       "tsconfig.json": "tsconfig.*.json",
       "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
       "props": "*.props.ts",
@@ -48,6 +48,11 @@
 
       ["tw`([^;]*)`"],
     ],
+
+    "files.watcherExclude": {
+      "**/src-tauri/target/**": true,
+      "**/node_modules/**": true,
+    },
   },
 }
 
