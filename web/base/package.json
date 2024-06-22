@@ -21,14 +21,10 @@
     "@vite-pwa/nuxt": "^0.6.0",
     "@vue-macros/nuxt": "^1.9.30",
     "@vue/test-utils": "^2.4.5",
-    "@xstate/test": "^0.5.1",
     "eslint": "^8.57.0",
-    "happy-dom": "^14.7.1",
-    "jsdom": "^24.0.0",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
-    "typescript": "^5.4.5",
-    "vitest": "^1.5.0"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@gcko/patterns": "0.0.0",
@@ -37,12 +33,9 @@
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
-    "@xstate/graph": "^1.4.2",
-    "@xstate/store": "^0.0.3",
-    "@xstate/vue": "^3.1.2",
     "immer": "^10.0.4",
     "pinia": "^2.1.7",
-    "ts-pattern": "^5.1.1",
-    "xstate": "^5.11.0"
+    "ts-pattern": "^5.1.1"
   }
 }
+
