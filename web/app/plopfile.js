@@ -1,3 +1,4 @@
+// eslint-disable-next-line jsdoc/require-jsdoc
 export default function (
   /** @type {import('plop').NodePlopAPI} */
   plop,
@@ -44,11 +45,6 @@ export default function (
         type: "add",
         path: "providers/context/{{kebabCase name}}-context.ts",
         templateFile: ".railroad/templates/provider/context.ts.hbs",
-      },
-      {
-        type: "add",
-        path: "providers/tests/{{kebabCase name}}-provider.test.ts",
-        templateFile: ".railroad/templates/provider/provider.spec.ts.hbs",
       },
     ],
   })
