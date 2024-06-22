@@ -1,20 +1,4 @@
 {
   "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Setup Environment",
-      "type": "shell",
-      "windows": {
-        "command": "./../init.ps1"
-      },
-      "group": "none",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "runOptions": {
-        "runOn": "folderOpen"
-      }
-    }
-  ]
+  "tasks": []
 }
