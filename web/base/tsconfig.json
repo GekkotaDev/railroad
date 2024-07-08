@@ -1,7 +1,0 @@
-{
-  "extends": "./.playground/.nuxt/tsconfig.json",
-  "compilerOptions": {
-    "types": ["@vue-macros/reactivity-transform/macros-global"]
-  }
-}
-

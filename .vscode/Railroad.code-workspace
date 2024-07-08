@@ -3,18 +3,6 @@
     {
       "path": "..",
     },
-    {
-      "path": "../web/app",
-    },
-    {
-      "path": "../web/lib",
-    },
-    {
-      "path": "../web/page",
-    },
-    {
-      "path": "../web/widgets",
-    },
   ],
   "settings": {
     "editor.codeActionsOnSave": {
@@ -25,7 +13,6 @@
       "*.vue": "${capture}.story.vue, ${capture}.story.md, ${capture}.test.ts, ${capture}.spec.ts",
       "tsconfig.json": "tsconfig.*.json",
       "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
-      "props": "*.props.ts",
     },
 
     "tailwindCSS.lint.cssConflict": "ignore",
