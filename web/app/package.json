@@ -9,7 +9,7 @@
     "dev:tauri": "nuxt dev",
     "postinstall": "nuxt cleanup && nuxt prepare",
     "test": "eslint . --fix && eslint . && nuxt typecheck && vitest run --coverage",
-    "git:pre-push": "eslint . --fix && eslint . && prettier . --write"
+    "git:pre-push": "eslint . --fix && prettier . --write"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
