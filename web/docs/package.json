@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.0",
+    "@astrojs/starlight": "^0.25.0",
+    "@astrojs/starlight-tailwind": "^2.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/fira-code": "^5.0.18",
+    "@fontsource/atkinson-hyperlegible": "^5.0.20",
+    "astro": "^4.10.2",
+    "sharp": "^0.32.5",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^0.4.0",
+    "astro-auto-import": "^0.4.2",
+    "config-eslint": "workspace:*",
+    "rehype-accessible-emojis": "^0.3.2"
+  }
+}

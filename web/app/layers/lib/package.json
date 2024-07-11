@@ -1,0 +1,33 @@
+{
+  "name": "my-nuxt-layer",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi dev .playground",
+    "dev:prepare": "nuxt prepare .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint .",
+    "postinstall": "nuxt cleanup .playground && nuxt prepare .playground"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "latest",
+    "@vueuse/nuxt": "^10.11.0",
+    "eslint": "^9.6.0",
+    "nuxt": "^3.12.3",
+    "typescript": "^5.5.3",
+    "vue": "latest"
+  },
+  "dependencies": {
+    "@gcko/signals-vue": "^0.0.1",
+    "@tanstack/vue-query": "^5.51.0",
+    "colord": "^2.9.3",
+    "dayjs": "^1.11.11",
+    "immer": "^10.1.1",
+    "mitsu": "^0.0.1",
+    "ts-pattern": "^5.2.0"
+  }
+}
+

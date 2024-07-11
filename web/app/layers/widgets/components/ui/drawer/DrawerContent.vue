@@ -1,0 +1,37 @@
+<script lang="ts" setup>
+import type { DialogContentEmits, DialogContentProps } from "radix-vue"
+import { useForwardPropsEmits } from "radix-vue"
+import { DrawerContent, DrawerPortal } from "vaul-vue"
+import type { HtmlHTMLAttributes } from "vue"
+
+import DrawerOverlay from "./DrawerOverlay.vue"
+// import { cn } from '@/lib/utils'
+
+const props = defineProps<
+  DialogContentProps & {
+    class?: HtmlHTMLAttributes["class"]
+    to?: HTMLElement
+  }
+>()
+const emits = defineEmits<DialogContentEmits>()
+
+const forwarded = useForwardPropsEmits(props, emits)
+</script>
+
+<template>
+  <DrawerPortal :to>
+    <DrawerOverlay />
+    <DrawerContent
+      v-bind="forwarded"
+      :class="
+        cn(
+          'bg-background fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-[10px] border',
+          props.class,
+        )
+      "
+    >
+      <div class="bg-muted mx-auto mt-4 h-2 w-[100px] rounded-full" />
+      <slot />
+    </DrawerContent>
+  </DrawerPortal>
+</template>
