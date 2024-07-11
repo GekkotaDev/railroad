@@ -1,0 +1,5 @@
+- [ ] Update `LICENSE`
+  - [ ] License text
+  - [ ] Author
+  - [ ] Date
+- [ ] Update `README.md`.
