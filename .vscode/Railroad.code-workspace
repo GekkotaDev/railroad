@@ -3,6 +3,9 @@
     {
       "path": "..",
     },
+    {
+      "path": "../web/app",
+    },
   ],
   "settings": {
     "editor.codeActionsOnSave": {
@@ -14,6 +17,8 @@
       "tsconfig.json": "tsconfig.*.json",
       "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
     },
+
+    "eslint.useFlatConfig": true,
 
     "tailwindCSS.lint.cssConflict": "ignore",
     "tailwindCSS.experimental.classRegex": [

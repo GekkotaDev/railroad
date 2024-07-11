@@ -1,11 +1,40 @@
 {
+  // Template
+  "Define Middleware": {
+    "prefix": [
+      "defineNuxtRouteMiddleware"
+    ],
+    "body": [
+      "export default defineNuxtRouteMiddleware((to, from) => {",
+      "\t$0",
+      "})",
+    ],
+    "scope": "typescript",
+    "isFileTemplate": true
+  },
+
+  // Snippets
   "Setup Script": {
     "prefix": "setup",
     "body": [
       "<script setup lang=\"ts\">",
-      "$0",
+      "// type Props = {}",
+      "",
+      "// defineProps<Props>()$0",
       "</script>",
     ],
     "scope": "vue"
+  },
+
+  "Define Page Meta": {
+    "prefix": [
+      "definePageMeta",
+    ],
+    "body": [
+      "definePageMeta({",
+      "\t$0",
+      "})",
+    ],
+    "scope": "typescript"
   },
 }
