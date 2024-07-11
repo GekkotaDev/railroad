@@ -3,18 +3,31 @@
   "name": "atk",
   "version": "0.0.0",
   "scripts": {
-    "changelog": "changelogen"
+    "changelog": "changelogen",
+    "dependencies": "taze",
+    "g": "plop",
+    "generate": "plop",
+    "prepare": "husky",
+    "git:pre-push": "pnpm run --filter \"*\" git:pre-push"
   },
   "devDependencies": {
+    "@babel/generator": "^7.24.7",
+    "@babel/types": "^7.24.7",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/node": "^20.14.10",
     "automd": "^0.3.7",
     "changelogen": "^0.5.5",
     "commitizen": "^4.3.0",
     "concurrently": "^8.2.2",
     "config-prettier": "workspace:*",
     "eslint-formatter-pretty": "^6.0.1",
+    "husky": "^9.0.11",
+    "nolyfill": "^1.0.34",
     "plop": "^4.0.1",
     "taze": "^0.13.8",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "unplugin-purge-polyfills": "^0.0.4"
   },
   "prettier": "config-prettier"
 }
+
