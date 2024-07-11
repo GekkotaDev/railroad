@@ -6,12 +6,14 @@ import eslint from "@eslint/js"
 import jsdoc from "eslint-plugin-jsdoc"
 import eslintConfigPrettier from "eslint-config-prettier"
 import pluginPromise from "eslint-plugin-promise"
-import * as pluginSecurity from "eslint-plugin-security"
+// import * as pluginSecurity from "eslint-plugin-security"
 import simpleImportSort from "eslint-plugin-simple-import-sort"
 import eslintPluginUnicorn from "eslint-plugin-unicorn"
 import pluginVue from "eslint-plugin-vue"
 import pluginVueA11y from "eslint-plugin-vuejs-accessibility"
 import tseslint from "typescript-eslint"
+
+// const pluginSecurity = await import("eslint-plugin-security")
 
 export default defineFlatConfig([
   eslint.configs.recommended,
@@ -19,7 +21,10 @@ export default defineFlatConfig([
   ...pluginVue.configs["flat/recommended"],
   ...pluginVueA11y.configs["flat/recommended"],
   pluginPromise.configs["flat/recommended"],
-  pluginSecurity.configs.recommended,
+
+  // TypeError: Cannot read properties of undefined (reading 'recommended')
+  // pluginSecurity.configs.recommended,
+
   jsdoc.configs["flat/recommended"],
   eslintConfigPrettier,
   {
