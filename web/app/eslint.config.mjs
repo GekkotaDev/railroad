@@ -1,6 +1,20 @@
 // @ts-check
-import withNuxt from "./.nuxt/eslint.config.mjs"
 import config from "config-eslint"
+import { defineFlatConfig } from "eslint-define-config"
 
-export default withNuxt(...config)
+import withNuxt from "./.nuxt/eslint.config.mjs"
+
+export default withNuxt(
+  ...config,
+  defineFlatConfig([
+    {
+      ignores: [
+        "**/*.spec.*",
+        "**/*.test.*",
+        "**/*.story.*",
+        "**/components/ui/**/*",
+      ],
+    },
+  ]),
+)
 

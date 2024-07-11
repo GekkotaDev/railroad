@@ -1,5 +1,7 @@
 import { fileURLToPath } from "node:url"
 
+import { purgePolyfills } from "unplugin-purge-polyfills"
+
 import Imports from "./.config/imports"
 import Structure from "./.config/struct"
 import Tauri from "./.config/tauri"
@@ -32,4 +34,9 @@ export default defineNuxtConfig({
     "@nuxtjs/critters",
     "@nuxt/eslint",
   ],
+
+  vite: {
+    plugins: [purgePolyfills.vite({})],
+  },
 })
+

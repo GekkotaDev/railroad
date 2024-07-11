@@ -25,6 +25,8 @@
     "@vite-pwa/astro": "^0.4.0",
     "astro-auto-import": "^0.4.2",
     "config-eslint": "workspace:*",
-    "rehype-accessible-emojis": "^0.3.2"
+    "eslint": "^9.6.0",
+    "rehype-accessible-emojis": "^0.3.2",
+    "unplugin-purge-polyfills": "^0.0.4"
   }
 }

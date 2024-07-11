@@ -1,0 +1,9 @@
+# Vitest
+*.spec.*
+*.test.*
+
+# Histoire
+*.story.*
+
+# Shadcn
+**/components/ui/**/index.*

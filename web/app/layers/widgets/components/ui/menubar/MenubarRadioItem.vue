@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
+import { DotFilledIcon } from '@radix-icons/vue'
 import {
   MenubarItemIndicator,
   MenubarRadioItem,
@@ -7,7 +7,7 @@ import {
   type MenubarRadioItemProps,
   useForwardPropsEmits,
 } from 'radix-vue'
-import { DotFilledIcon } from '@radix-icons/vue'
+import { computed,type HTMLAttributes } from 'vue'
 // import { cn } from '@/lib/utils'
 
 const props = defineProps<MenubarRadioItemProps & { class?: HTMLAttributes['class'] }>()

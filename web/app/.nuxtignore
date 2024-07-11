@@ -13,4 +13,4 @@ app/routes/**/+view.vue
 app/routes/**/*.ts
 
 # Shadcn
-components/ui/**/index.*
+**/components/ui/**/index.*

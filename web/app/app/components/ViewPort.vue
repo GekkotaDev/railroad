@@ -5,7 +5,7 @@ type Props = {
 
 defineProps<Props>()
 
-const { class: classname, view } = useContext(AppViewContext)
+const { class: classname } = inject(ViewPortContext, { class: "" })
 </script>
 
 <template>

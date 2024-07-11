@@ -8,7 +8,6 @@ import {
 import { computed, type HTMLAttributes } from "vue"
 
 // import { cn } from "@/lib/utils"
-
 import ScrollBar from "./ScrollBar.vue"
 
 const props = defineProps<
