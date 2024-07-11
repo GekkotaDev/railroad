@@ -19,4 +19,3 @@ body {
   background-color: transparent;
 }
 </style>
-

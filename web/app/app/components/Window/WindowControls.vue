@@ -33,4 +33,3 @@ const selectedPlatform = computed(() => forcePlatform ?? platform.value)
     <WindowCloseUniversal @close="() => window.close()" />
   </div>
 </template>
-

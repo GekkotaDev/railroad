@@ -6,6 +6,6 @@ export default defineNuxtConfig({
     "@oku-ui/motion-nuxt",
     "@vueuse/nuxt",
     "@nuxtjs/device",
-    "@nuxt/icon"
-  ]
+    "@nuxt/icon",
+  ],
 })

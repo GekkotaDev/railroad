@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import { CheckIcon } from '@radix-icons/vue'
+import { CheckIcon } from "@radix-icons/vue"
 import {
   SelectItem,
   SelectItemIndicator,
   type SelectItemProps,
   SelectItemText,
   useForwardProps,
-} from 'radix-vue'
-import { computed,type HTMLAttributes } from 'vue'
+} from "radix-vue"
+import { computed, type HTMLAttributes } from "vue"
 
-import { cn } from '@/lib/utils'
+import { cn } from "@/lib/utils"
 
-const props = defineProps<SelectItemProps & { class?: HTMLAttributes['class'] }>()
+const props = defineProps<
+  SelectItemProps & { class?: HTMLAttributes["class"] }
+>()
 
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props
@@ -27,7 +29,7 @@ const forwardedProps = useForwardProps(delegatedProps)
     v-bind="forwardedProps"
     :class="
       cn(
-        'relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+        'focus:bg-accent focus:text-accent-foreground relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
         props.class,
       )
     "

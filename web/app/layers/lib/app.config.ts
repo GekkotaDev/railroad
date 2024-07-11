@@ -12,4 +12,3 @@ declare module "@nuxt/schema" {
     }
   }
 }
-

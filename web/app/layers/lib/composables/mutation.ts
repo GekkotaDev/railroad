@@ -31,7 +31,7 @@ export const useMutable = <Actions, T extends object>(
    * Dispatch a message to the mutator.
    *
    * @param action Action to perform.
-   * @returns
+   * @returns `void`
    */
   const dispatcher = (action: Actions): void => void mutator(action, update)
 

@@ -7,4 +7,3 @@ export default defineConfig({
   storyIgnored: ["**/node_modules/**", "**/dist/**"],
   setupFile: "./histoire.setup.ts",
 })
-

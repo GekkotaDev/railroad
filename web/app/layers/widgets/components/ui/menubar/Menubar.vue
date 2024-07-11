@@ -4,11 +4,13 @@ import {
   type MenubarRootEmits,
   type MenubarRootProps,
   useForwardPropsEmits,
-} from 'radix-vue'
-import { computed,type HTMLAttributes } from 'vue'
+} from "radix-vue"
+import { computed, type HTMLAttributes } from "vue"
 // import { cn } from '@/lib/utils'
 
-const props = defineProps<MenubarRootProps & { class?: HTMLAttributes['class'] }>()
+const props = defineProps<
+  MenubarRootProps & { class?: HTMLAttributes["class"] }
+>()
 const emits = defineEmits<MenubarRootEmits>()
 
 const delegatedProps = computed(() => {
@@ -25,7 +27,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     v-bind="forwarded"
     :class="
       cn(
-        'flex h-9 items-center space-x-1 rounded-md border bg-background p-1 shadow-sm',
+        'bg-background flex h-9 items-center space-x-1 rounded-md border p-1 shadow-sm',
         props.class,
       )
     "

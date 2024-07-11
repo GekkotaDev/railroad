@@ -14,4 +14,3 @@ export const setupVue3 = defineSetupVue3(
     })
   },
 )
-

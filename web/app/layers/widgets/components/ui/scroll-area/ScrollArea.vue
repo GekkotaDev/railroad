@@ -33,4 +33,3 @@ const delegatedProps = computed(() => {
     <ScrollAreaCorner />
   </ScrollAreaRoot>
 </template>
-
