@@ -16,9 +16,9 @@
     "@nuxt/eslint": "latest",
     "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.6.0",
-    "nuxt": "^3.12.3",
-    "typescript": "^5.5.3",
-    "vue": "latest"
+    "nuxt": "catalog:",
+    "typescript": "catalog:",
+    "vue": "catalog:"
   },
   "dependencies": {
     "@gcko/signals-vue": "^0.0.1",
