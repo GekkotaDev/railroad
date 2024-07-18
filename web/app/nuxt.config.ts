@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url"
 import { purgePolyfills } from "unplugin-purge-polyfills"
 
 import Imports from "./.config/imports"
+import locales from "./.config/locales"
 import Structure from "./.config/struct"
 import Tauri from "./.config/tauri"
 
@@ -37,5 +38,16 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [purgePolyfills.vite({})],
+  },
+
+  colorMode: {
+    classSuffix: "",
+  },
+
+  i18n: {
+    defaultLocale: "en",
+    langDir: "./languages",
+    lazy: true,
+    locales,
   },
 })

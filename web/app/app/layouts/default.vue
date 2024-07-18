@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <ViewPort>
     <slot />
-  </div>
+  </ViewPort>
 </template>

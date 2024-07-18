@@ -25,11 +25,11 @@ const selectedPlatform = computed(() => forcePlatform ?? platform.value)
   </div>
 
   <div v-if="selectedPlatform === 'pc'" class="absolute right-0 flex h-8">
-    <WindowMinimizeUniversal @minimize="() => window.minimize()" />
-    <WindowZoomUniversal
+    <WindowMinimize @minimize="() => window.minimize()" />
+    <WindowZoom
       @maximize="() => window.toggleMaximize()"
       @restore="() => window.toggleMaximize()"
     />
-    <WindowCloseUniversal @close="() => window.close()" />
+    <WindowClose @close="() => window.close()" />
   </div>
 </template>

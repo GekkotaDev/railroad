@@ -5,7 +5,7 @@ type Props = {
 
 defineProps<Props>()
 
-const { class: classname } = inject(ViewPortContext, { class: "" })
+const { class: classname } = inject(ViewPortContext, { class: ref("") })
 </script>
 
 <template>
@@ -14,7 +14,7 @@ const { class: classname } = inject(ViewPortContext, { class: "" })
       id="app"
       ref="view"
       vaul-drawer-wrapper
-      :class="`relative min-h-0 min-w-0 ${$props.class} ${classname}`"
+      :class="`relative min-h-0 min-w-0 grow ${$props.class} ${classname}`"
     >
       <slot />
     </UiCard>

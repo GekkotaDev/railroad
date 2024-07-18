@@ -6,7 +6,9 @@ import { VueQueryDevtools } from "@tanstack/vue-query-devtools"
 
 <template>
   <ViewPortProvider>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </ViewPortProvider>
 
   <DevOnly>
