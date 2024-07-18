@@ -21,6 +21,7 @@ const props = withDefaults(
   defineProps<SelectContentProps & { class?: HTMLAttributes["class"] }>(),
   {
     position: "popper",
+    class: undefined,
   },
 )
 const emits = defineEmits<SelectContentEmits>()
