@@ -6,10 +6,6 @@ export default defineNuxtConfig({
   imports: {
     presets: [
       {
-        from: "@gcko/signals-vue",
-        imports: ["signal", "state", "derived", "toSignal", "toSignals"],
-      },
-      {
         from: "@tanstack/vue-query",
         imports: [
           "keepPreviousData",
@@ -29,6 +25,18 @@ export default defineNuxtConfig({
         imports: [{ name: "colord", as: "color" }],
       },
       {
+        from: "dahon/bridge",
+        imports: ["toSignal"],
+      },
+      {
+        from: "dahon/mutable",
+        imports: ["useMutable", "useImmer"],
+      },
+      {
+        from: "dahon/signal",
+        imports: ["signal", "Signal", "SignalHooks", "WritableSignal"],
+      },
+      {
         from: "dayjs",
         imports: [{ name: "default", as: "day" }],
       },
@@ -37,8 +45,16 @@ export default defineNuxtConfig({
         imports: ["enableMapSet", "enablePatches"],
       },
       {
-        from: "mitsu",
-        imports: ["createInjector", "injected"],
+        from: "neverthrow",
+        imports: [
+          "Result",
+          "ResultAsync",
+          "err",
+          "errAsync",
+          "ok",
+          "okAsync",
+          "safeTry",
+        ],
       },
       {
         from: "ts-pattern",
