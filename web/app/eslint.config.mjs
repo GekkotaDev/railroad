@@ -17,6 +17,7 @@ export default withNuxt(
         "**/*.spec.*",
         "**/*.test.*",
         "**/*.story.*",
+        "**/src-tauri/*",
       ],
       files: [
         "**/*.js",
